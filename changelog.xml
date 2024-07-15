@@ -7,12 +7,17 @@
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd"
     xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext">
 
-    <!-- Previous changesets for creating collections -->
-    <changeSet id="20230520-1" author="bhaswata">
-        <ext:createCollection collectionName="test1" />
+    <!-- ChangeSet for creating a collection named 'myCollection' -->
+    <changeSet id="1" author="yourname">
+        <ext:createCollection collectionName="myCollection" />
     </changeSet>
-    <changeSet id="20230520-2" author="bhaswata">
-        <ext:createCollection collectionName="test2" />
-    </changeSet>
-</databaseChangeLog>
 
+    <!-- ChangeSet for inserting a document into 'myCollection' -->
+    <changeSet id="2" author="yourname">
+        <insert collectionName="myCollection">
+            <column name="field1" value="value1"/>
+            <column name="field2" value="value2"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
