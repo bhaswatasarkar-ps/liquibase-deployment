@@ -4,9 +4,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:mongodb="http://www.liquibase.org/xml/ns/mongodb"
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
-    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd
-    http://www.liquibase.org/xml/ns/mongodb
-    http://www.liquibase.org/xml/ns/mongodb/mongodb-ext.xsd">
+                        http://www.liquibase.org/xml/ns/mongodb">
  
     <changeSet id="1" author="your_name">
         <mongodb:createCollection collectionName="your_collection_name">
