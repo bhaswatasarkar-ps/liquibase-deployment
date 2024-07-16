@@ -4,13 +4,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:mongodb="http://www.liquibase.org/xml/ns/mongodb"
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
-    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd
-    http://www.liquibase.org/xml/ns/mongodb
-    http://www.liquibase.org/xml/ns/mongodb/mongodb-ext.xsd">
- 
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd
+        http://www.liquibase.org/xml/ns/mongodb
+        http://www.liquibase.org/xml/ns/mongodb/mongodb-ext.xsd">
+
     <changeSet id="1" author="bhaswata">
-        <mongodb:createCollection collectionName="my_collection">
-        </mongodb:createCollection>
+        <mongodb:createCollection collectionName="my_collection"/>
     </changeSet>
- 
+
 </databaseChangeLog>
